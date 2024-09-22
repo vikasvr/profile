@@ -1470,7 +1470,7 @@
         'data-icon': iconName,
         'class': attrClass,
         'role': extra.attributes.role || 'img',
-        'xmlns': 'https://www.w3.org/2000/svg',
+        'xmlns': 'http://www.w3.org/2000/svg',
         'viewBox': "0 0 ".concat(width, " ").concat(height)
       }
     };
@@ -1757,7 +1757,7 @@
   }
 
   function createElementNS(tag) {
-    return DOCUMENT.createElementNS('https://www.w3.org/2000/svg', tag);
+    return DOCUMENT.createElementNS('http://www.w3.org/2000/svg', tag);
   }
 
   function createElement(tag) {
@@ -2612,7 +2612,7 @@
               extra,
               watchable: true
             });
-            const element = DOCUMENT.createElementNS('https://www.w3.org/2000/svg', 'svg');
+            const element = DOCUMENT.createElementNS('http://www.w3.org/2000/svg', 'svg');
 
             if (position === '::before') {
               node.insertBefore(element, node.firstChild);
